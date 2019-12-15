@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fr">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span>package me.unei.digicode.api;<a name="line.1"></a>
+<span class="sourceLineNo">002</span><a name="line.2"></a>
+<span class="sourceLineNo">003</span>import me.unei.digicode.mp.APlayer;<a name="line.3"></a>
+<span class="sourceLineNo">004</span><a name="line.4"></a>
+<span class="sourceLineNo">005</span>/**<a name="line.5"></a>
+<span class="sourceLineNo">006</span> * Represents a callback for a digicode operation.<a name="line.6"></a>
+<span class="sourceLineNo">007</span> * <a name="line.7"></a>
+<span class="sourceLineNo">008</span> * @author JësFot<a name="line.8"></a>
+<span class="sourceLineNo">009</span> */<a name="line.9"></a>
+<span class="sourceLineNo">010</span>@FunctionalInterface<a name="line.10"></a>
+<span class="sourceLineNo">011</span>public interface IOperationResult<a name="line.11"></a>
+<span class="sourceLineNo">012</span>{<a name="line.12"></a>
+<span class="sourceLineNo">013</span>        /**<a name="line.13"></a>
+<span class="sourceLineNo">014</span>         * Performs operations based on a digicode operation result.<a name="line.14"></a>
+<span class="sourceLineNo">015</span>         * <a name="line.15"></a>
+<span class="sourceLineNo">016</span>         * @param codeIsCorrect '{@code true}' if the code given by the player matches, '{@code false}' otherwise.<a name="line.16"></a>
+<span class="sourceLineNo">017</span>         * @param player The player who completed the operation.<a name="line.17"></a>
+<span class="sourceLineNo">018</span>         * @param realCode The code requested to be typed by the player.<a name="line.18"></a>
+<span class="sourceLineNo">019</span>         * @param typedCode The code the player has entered.<a name="line.19"></a>
+<span class="sourceLineNo">020</span>         */<a name="line.20"></a>
+<span class="sourceLineNo">021</span>        void run(boolean codeIsCorrect, APlayer player, String realCode, String typedCode);<a name="line.21"></a>
+<span class="sourceLineNo">022</span>        <a name="line.22"></a>
+<span class="sourceLineNo">023</span>        /**<a name="line.23"></a>
+<span class="sourceLineNo">024</span>         * Called when a given player exits the view without completing the code.<a name="line.24"></a>
+<span class="sourceLineNo">025</span>         * <a name="line.25"></a>
+<span class="sourceLineNo">026</span>         * @param player The player who cancelled the operation.<a name="line.26"></a>
+<span class="sourceLineNo">027</span>         * @param realCode The correct code.<a name="line.27"></a>
+<span class="sourceLineNo">028</span>         * @param currentCode The code the has typed right before canceling.<a name="line.28"></a>
+<span class="sourceLineNo">029</span>         */<a name="line.29"></a>
+<span class="sourceLineNo">030</span>        default void failed(APlayer player, String realCode, String currentCode) {};<a name="line.30"></a>
+<span class="sourceLineNo">031</span>        <a name="line.31"></a>
+<span class="sourceLineNo">032</span>        /**<a name="line.32"></a>
+<span class="sourceLineNo">033</span>         * Called each times a given players enters or remove a digit in it's current view.<a name="line.33"></a>
+<span class="sourceLineNo">034</span>         * <a name="line.34"></a>
+<span class="sourceLineNo">035</span>         * @param player The player in operation.<a name="line.35"></a>
+<span class="sourceLineNo">036</span>         * @param realCode The code requested to be typed by the player.<a name="line.36"></a>
+<span class="sourceLineNo">037</span>         * @param currentCode The actual code the player has given.<a name="line.37"></a>
+<span class="sourceLineNo">038</span>         */<a name="line.38"></a>
+<span class="sourceLineNo">039</span>        default void update(APlayer player, String realCode, String currentCode) {};<a name="line.39"></a>
+<span class="sourceLineNo">040</span>}<a name="line.40"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>

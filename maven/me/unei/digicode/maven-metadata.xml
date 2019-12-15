@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>me.unei</groupId>
+  <artifactId>digicode</artifactId>
+  <versioning>
+    <latest>0.0.1-SNAPSHOT</latest>
+    <snapshot>0.0.1-SNAPSHOT</snapshot>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20191101082552</lastUpdated>
+  </versioning>
+</metadata>

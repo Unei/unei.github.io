@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fr">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span>package me.unei.digicode.plugin;<a name="line.1"></a>
+<span class="sourceLineNo">002</span><a name="line.2"></a>
+<span class="sourceLineNo">003</span>import java.io.File;<a name="line.3"></a>
+<span class="sourceLineNo">004</span>import java.util.List;<a name="line.4"></a>
+<span class="sourceLineNo">005</span>import java.util.UUID;<a name="line.5"></a>
+<span class="sourceLineNo">006</span><a name="line.6"></a>
+<span class="sourceLineNo">007</span>import org.bukkit.Bukkit;<a name="line.7"></a>
+<span class="sourceLineNo">008</span>import org.bukkit.command.Command;<a name="line.8"></a>
+<span class="sourceLineNo">009</span>import org.bukkit.command.CommandSender;<a name="line.9"></a>
+<span class="sourceLineNo">010</span>import org.bukkit.configuration.Configuration;<a name="line.10"></a>
+<span class="sourceLineNo">011</span>import org.bukkit.configuration.ConfigurationSection;<a name="line.11"></a>
+<span class="sourceLineNo">012</span>import org.bukkit.configuration.file.YamlConfiguration;<a name="line.12"></a>
+<span class="sourceLineNo">013</span>import org.bukkit.entity.Entity;<a name="line.13"></a>
+<span class="sourceLineNo">014</span>import org.bukkit.entity.Player;<a name="line.14"></a>
+<span class="sourceLineNo">015</span>import org.bukkit.plugin.java.JavaPlugin;<a name="line.15"></a>
+<span class="sourceLineNo">016</span><a name="line.16"></a>
+<span class="sourceLineNo">017</span>import me.unei.digicode.api.IDigicodeOperation;<a name="line.17"></a>
+<span class="sourceLineNo">018</span>import me.unei.digicode.config.MainConfigFile;<a name="line.18"></a>
+<span class="sourceLineNo">019</span>import me.unei.digicode.mp.APlayer;<a name="line.19"></a>
+<span class="sourceLineNo">020</span>import me.unei.digicode.mp.AnInventory;<a name="line.20"></a>
+<span class="sourceLineNo">021</span>import me.unei.digicode.mp.AnItem;<a name="line.21"></a>
+<span class="sourceLineNo">022</span>import me.unei.digicode.mp.IListenerController;<a name="line.22"></a>
+<span class="sourceLineNo">023</span>import me.unei.digicode.mp.bukkit.BukkitInventory;<a name="line.23"></a>
+<span class="sourceLineNo">024</span>import me.unei.digicode.mp.bukkit.BukkitInventoryListener;<a name="line.24"></a>
+<span class="sourceLineNo">025</span>import me.unei.digicode.mp.bukkit.BukkitItem;<a name="line.25"></a>
+<span class="sourceLineNo">026</span>import me.unei.digicode.mp.bukkit.BukkitPlayer;<a name="line.26"></a>
+<span class="sourceLineNo">027</span><a name="line.27"></a>
+<span class="sourceLineNo">028</span>public final class BukkitPlugin extends JavaPlugin implements IPlugin {<a name="line.28"></a>
+<span class="sourceLineNo">029</span>        <a name="line.29"></a>
+<span class="sourceLineNo">030</span>        private final UneiDigit plugin;<a name="line.30"></a>
+<span class="sourceLineNo">031</span>        <a name="line.31"></a>
+<span class="sourceLineNo">032</span>        private BukkitInventoryListener listenerController = null;<a name="line.32"></a>
+<span class="sourceLineNo">033</span>        <a name="line.33"></a>
+<span class="sourceLineNo">034</span>        public BukkitPlugin() {<a name="line.34"></a>
+<span class="sourceLineNo">035</span>                this.plugin = new UneiDigit(this);<a name="line.35"></a>
+<span class="sourceLineNo">036</span>        }<a name="line.36"></a>
+<span class="sourceLineNo">037</span>        <a name="line.37"></a>
+<span class="sourceLineNo">038</span>        @Override<a name="line.38"></a>
+<span class="sourceLineNo">039</span>        public void onLoad() {<a name="line.39"></a>
+<span class="sourceLineNo">040</span>                plugin.onLoad();<a name="line.40"></a>
+<span class="sourceLineNo">041</span>                <a name="line.41"></a>
+<span class="sourceLineNo">042</span>                File cfg = new File(this.getDataFolder(), "digicode.yml");<a name="line.42"></a>
+<span class="sourceLineNo">043</span>                <a name="line.43"></a>
+<span class="sourceLineNo">044</span>                if (!cfg.exists())<a name="line.44"></a>
+<span class="sourceLineNo">045</span>                {<a name="line.45"></a>
+<span class="sourceLineNo">046</span>                        this.saveResource("digicode.yml", true);<a name="line.46"></a>
+<span class="sourceLineNo">047</span>                }<a name="line.47"></a>
+<span class="sourceLineNo">048</span>        }<a name="line.48"></a>
+<span class="sourceLineNo">049</span><a name="line.49"></a>
+<span class="sourceLineNo">050</span>        @Override<a name="line.50"></a>
+<span class="sourceLineNo">051</span>        public IListenerController getListenerController() {<a name="line.51"></a>
+<span class="sourceLineNo">052</span>                return this.listenerController;<a name="line.52"></a>
+<span class="sourceLineNo">053</span>        }<a name="line.53"></a>
+<span class="sourceLineNo">054</span>        <a name="line.54"></a>
+<span class="sourceLineNo">055</span>        @Override<a name="line.55"></a>
+<span class="sourceLineNo">056</span>        public AnInventory createInventory(int size, String title) {<a name="line.56"></a>
+<span class="sourceLineNo">057</span>                if (title == null || title.isEmpty()) {<a name="line.57"></a>
+<span class="sourceLineNo">058</span>                        return new BukkitInventory(size, title);<a name="line.58"></a>
+<span class="sourceLineNo">059</span>                } else {<a name="line.59"></a>
+<span class="sourceLineNo">060</span>                        return new BukkitInventory(size);<a name="line.60"></a>
+<span class="sourceLineNo">061</span>                }<a name="line.61"></a>
+<span class="sourceLineNo">062</span>        }<a name="line.62"></a>
+<span class="sourceLineNo">063</span>        <a name="line.63"></a>
+<span class="sourceLineNo">064</span>        @Override<a name="line.64"></a>
+<span class="sourceLineNo">065</span>        public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {<a name="line.65"></a>
+<span class="sourceLineNo">066</span>                if (command.getName().equalsIgnoreCase("rundigicode")) {<a name="line.66"></a>
+<span class="sourceLineNo">067</span>                        if (args.length != 1 &amp;&amp; args.length != 2) {<a name="line.67"></a>
+<span class="sourceLineNo">068</span>                                return false;<a name="line.68"></a>
+<span class="sourceLineNo">069</span>                        }<a name="line.69"></a>
+<span class="sourceLineNo">070</span>                        String name = args[0];<a name="line.70"></a>
+<span class="sourceLineNo">071</span>                        String playerName = (args.length == 2) ? args[1] : null;<a name="line.71"></a>
+<span class="sourceLineNo">072</span>                        List&lt;Entity&gt; entities = (playerName != null) ? Bukkit.selectEntities(sender, playerName) : null;<a name="line.72"></a>
+<span class="sourceLineNo">073</span>                        IDigicodeOperation.Builder builder = this.plugin.getOperator().getNamedOperation(name);<a name="line.73"></a>
+<span class="sourceLineNo">074</span>                        if (builder == null)<a name="line.74"></a>
+<span class="sourceLineNo">075</span>                        {<a name="line.75"></a>
+<span class="sourceLineNo">076</span>                                sender.sendMessage("No digicode operation with this name is available");<a name="line.76"></a>
+<span class="sourceLineNo">077</span>                                return true;<a name="line.77"></a>
+<span class="sourceLineNo">078</span>                        }<a name="line.78"></a>
+<span class="sourceLineNo">079</span>                        if (entities == null &amp;&amp; (sender instanceof Player))<a name="line.79"></a>
+<span class="sourceLineNo">080</span>                        {<a name="line.80"></a>
+<span class="sourceLineNo">081</span>                                builder.forPlayer(getPlayer((Player) sender)).start();<a name="line.81"></a>
+<span class="sourceLineNo">082</span>                        }<a name="line.82"></a>
+<span class="sourceLineNo">083</span>                        else if (entities != null &amp;&amp; !entities.isEmpty())<a name="line.83"></a>
+<span class="sourceLineNo">084</span>                        {<a name="line.84"></a>
+<span class="sourceLineNo">085</span>                                for (Entity e : entities)<a name="line.85"></a>
+<span class="sourceLineNo">086</span>                                {<a name="line.86"></a>
+<span class="sourceLineNo">087</span>                                        if (e instanceof Player)<a name="line.87"></a>
+<span class="sourceLineNo">088</span>                                        {<a name="line.88"></a>
+<span class="sourceLineNo">089</span>                                                builder.forPlayer(getPlayer((Player) e)).start();<a name="line.89"></a>
+<span class="sourceLineNo">090</span>                                        }<a name="line.90"></a>
+<span class="sourceLineNo">091</span>                                }<a name="line.91"></a>
+<span class="sourceLineNo">092</span>                        }<a name="line.92"></a>
+<span class="sourceLineNo">093</span>                        else<a name="line.93"></a>
+<span class="sourceLineNo">094</span>                        {<a name="line.94"></a>
+<span class="sourceLineNo">095</span>                                sender.sendMessage("Invalid targets");<a name="line.95"></a>
+<span class="sourceLineNo">096</span>                        }<a name="line.96"></a>
+<span class="sourceLineNo">097</span>                        return true;<a name="line.97"></a>
+<span class="sourceLineNo">098</span>                }<a name="line.98"></a>
+<span class="sourceLineNo">099</span>                return false;<a name="line.99"></a>
+<span class="sourceLineNo">100</span>        }<a name="line.100"></a>
+<span class="sourceLineNo">101</span>        <a name="line.101"></a>
+<span class="sourceLineNo">102</span>        @Override<a name="line.102"></a>
+<span class="sourceLineNo">103</span>        public AnItem createItem(String data) {<a name="line.103"></a>
+<span class="sourceLineNo">104</span>                if (Character.isDigit(data.charAt(0)))<a name="line.104"></a>
+<span class="sourceLineNo">105</span>                {<a name="line.105"></a>
+<span class="sourceLineNo">106</span>                        int idx = data.indexOf('#');<a name="line.106"></a>
+<span class="sourceLineNo">107</span>                        if (idx &gt; 0)<a name="line.107"></a>
+<span class="sourceLineNo">108</span>                        {<a name="line.108"></a>
+<span class="sourceLineNo">109</span>                                return createItem(data.substring(idx + 1), Integer.valueOf(data.substring(0, idx)));<a name="line.109"></a>
+<span class="sourceLineNo">110</span>                        }<a name="line.110"></a>
+<span class="sourceLineNo">111</span>                }<a name="line.111"></a>
+<span class="sourceLineNo">112</span>                return createItem(data, 1);<a name="line.112"></a>
+<span class="sourceLineNo">113</span>        }<a name="line.113"></a>
+<span class="sourceLineNo">114</span>        <a name="line.114"></a>
+<span class="sourceLineNo">115</span>        public AnItem createItem(String data, int amount) {<a name="line.115"></a>
+<span class="sourceLineNo">116</span>                try {<a name="line.116"></a>
+<span class="sourceLineNo">117</span>                        return new BukkitItem(NMSReflector.argumentItemStack_parse(data, amount));<a name="line.117"></a>
+<span class="sourceLineNo">118</span>                } catch (Exception e) {<a name="line.118"></a>
+<span class="sourceLineNo">119</span>                        return null;<a name="line.119"></a>
+<span class="sourceLineNo">120</span>                }<a name="line.120"></a>
+<span class="sourceLineNo">121</span>        }<a name="line.121"></a>
+<span class="sourceLineNo">122</span>        <a name="line.122"></a>
+<span class="sourceLineNo">123</span>        @Override<a name="line.123"></a>
+<span class="sourceLineNo">124</span>        public APlayer getPlayer(UUID id) {<a name="line.124"></a>
+<span class="sourceLineNo">125</span>                return getPlayer(this.getServer().getPlayer(id));<a name="line.125"></a>
+<span class="sourceLineNo">126</span>        }<a name="line.126"></a>
+<span class="sourceLineNo">127</span>        <a name="line.127"></a>
+<span class="sourceLineNo">128</span>        public APlayer getPlayer(Player player) {<a name="line.128"></a>
+<span class="sourceLineNo">129</span>                return new BukkitPlayer(player);<a name="line.129"></a>
+<span class="sourceLineNo">130</span>        }<a name="line.130"></a>
+<span class="sourceLineNo">131</span>        <a name="line.131"></a>
+<span class="sourceLineNo">132</span>        @Override<a name="line.132"></a>
+<span class="sourceLineNo">133</span>        public void onEnable() {<a name="line.133"></a>
+<span class="sourceLineNo">134</span>                this.listenerController = BukkitInventoryListener.register(this);<a name="line.134"></a>
+<span class="sourceLineNo">135</span>                <a name="line.135"></a>
+<span class="sourceLineNo">136</span>                plugin.onEnable();<a name="line.136"></a>
+<span class="sourceLineNo">137</span>                <a name="line.137"></a>
+<span class="sourceLineNo">138</span>                Configuration cfg = YamlConfiguration.loadConfiguration(new File(this.getDataFolder(), "digicode.yml"));<a name="line.138"></a>
+<span class="sourceLineNo">139</span>                ConfigurationSection sec = cfg.getConfigurationSection("digicode.items");<a name="line.139"></a>
+<span class="sourceLineNo">140</span>                if (sec != null)<a name="line.140"></a>
+<span class="sourceLineNo">141</span>                {<a name="line.141"></a>
+<span class="sourceLineNo">142</span>                        if (sec.contains("exit")) MainConfigFile.exitItem = sec.getString("exit");<a name="line.142"></a>
+<span class="sourceLineNo">143</span>                        if (sec.contains("validate")) MainConfigFile.validateItem = sec.getString("validate");<a name="line.143"></a>
+<span class="sourceLineNo">144</span>                        if (sec.contains("cancel")) MainConfigFile.cancelItem = sec.getString("cancel");<a name="line.144"></a>
+<span class="sourceLineNo">145</span>                        if (sec.contains("return")) MainConfigFile.returnItem = sec.getString("return");<a name="line.145"></a>
+<span class="sourceLineNo">146</span>                        if (sec.contains("val0")) MainConfigFile.val_0Item = sec.getString("val0");<a name="line.146"></a>
+<span class="sourceLineNo">147</span>                        if (sec.contains("val1")) MainConfigFile.val_1Item = sec.getString("val1");<a name="line.147"></a>
+<span class="sourceLineNo">148</span>                        if (sec.contains("val2")) MainConfigFile.val_2Item = sec.getString("val2");<a name="line.148"></a>
+<span class="sourceLineNo">149</span>                        if (sec.contains("val3")) MainConfigFile.val_3Item = sec.getString("val3");<a name="line.149"></a>
+<span class="sourceLineNo">150</span>                        if (sec.contains("val4")) MainConfigFile.val_4Item = sec.getString("val4");<a name="line.150"></a>
+<span class="sourceLineNo">151</span>                        if (sec.contains("val5")) MainConfigFile.val_5Item = sec.getString("val5");<a name="line.151"></a>
+<span class="sourceLineNo">152</span>                        if (sec.contains("val6")) MainConfigFile.val_6Item = sec.getString("val6");<a name="line.152"></a>
+<span class="sourceLineNo">153</span>                        if (sec.contains("val7")) MainConfigFile.val_7Item = sec.getString("val7");<a name="line.153"></a>
+<span class="sourceLineNo">154</span>                        if (sec.contains("val8")) MainConfigFile.val_8Item = sec.getString("val8");<a name="line.154"></a>
+<span class="sourceLineNo">155</span>                        if (sec.contains("val9")) MainConfigFile.val_9Item = sec.getString("val9");<a name="line.155"></a>
+<span class="sourceLineNo">156</span>                }<a name="line.156"></a>
+<span class="sourceLineNo">157</span>                <a name="line.157"></a>
+<span class="sourceLineNo">158</span>                MainConfigFile.configuredCodes.clear();<a name="line.158"></a>
+<span class="sourceLineNo">159</span>                ConfigurationSection nameds = cfg.getConfigurationSection("digicode.codes");<a name="line.159"></a>
+<span class="sourceLineNo">160</span>                if (nameds != null)<a name="line.160"></a>
+<span class="sourceLineNo">161</span>                {<a name="line.161"></a>
+<span class="sourceLineNo">162</span>                        for (String key : nameds.getKeys(false))<a name="line.162"></a>
+<span class="sourceLineNo">163</span>                        {<a name="line.163"></a>
+<span class="sourceLineNo">164</span>                                MainConfigFile.ConfiguredCode code = new MainConfigFile.ConfiguredCode();<a name="line.164"></a>
+<span class="sourceLineNo">165</span>                                ConfigurationSection part = nameds.getConfigurationSection(key);<a name="line.165"></a>
+<span class="sourceLineNo">166</span>                                code.title = part.getString("title", key);<a name="line.166"></a>
+<span class="sourceLineNo">167</span>                                code.code = part.getString("code");<a name="line.167"></a>
+<span class="sourceLineNo">168</span>                                code.success = part.getString("success", "");<a name="line.168"></a>
+<span class="sourceLineNo">169</span>                                code.failure = part.getString("failure", "");<a name="line.169"></a>
+<span class="sourceLineNo">170</span>                                MainConfigFile.configuredCodes.put(key, code);<a name="line.170"></a>
+<span class="sourceLineNo">171</span>                        }<a name="line.171"></a>
+<span class="sourceLineNo">172</span>                }<a name="line.172"></a>
+<span class="sourceLineNo">173</span>        }<a name="line.173"></a>
+<span class="sourceLineNo">174</span>        <a name="line.174"></a>
+<span class="sourceLineNo">175</span>        @Override<a name="line.175"></a>
+<span class="sourceLineNo">176</span>        public void onDisable() {<a name="line.176"></a>
+<span class="sourceLineNo">177</span>                plugin.onDisable();<a name="line.177"></a>
+<span class="sourceLineNo">178</span>        }<a name="line.178"></a>
+<span class="sourceLineNo">179</span>        <a name="line.179"></a>
+<span class="sourceLineNo">180</span>        @Override<a name="line.180"></a>
+<span class="sourceLineNo">181</span>        public IPlugin.Type getType() {<a name="line.181"></a>
+<span class="sourceLineNo">182</span>                return IPlugin.Type.BUKKIT;<a name="line.182"></a>
+<span class="sourceLineNo">183</span>        }<a name="line.183"></a>
+<span class="sourceLineNo">184</span>}<a name="line.184"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>
