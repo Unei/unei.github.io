@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6,"i38":6,"i39":6,"i40":6,"i41":6,"i42":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -105,7 +105,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public interface <a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.9">IFlatConfiguration</a></pre>
+<pre>public interface <a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.10">IFlatConfiguration</a></pre>
 </li>
 </ul>
 </div>
@@ -139,121 +139,185 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getBoolean-java.lang.String-">getBoolean</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
 <div class="block">Returns the direct child element of this configuration which has
- the specified key as name as boolean, if possible.</div>
+ the specified key as name as boolean, if possible or null.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>byte</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getByte-java.lang.String-">getByte</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
-<div class="block">Returns the direct child element of this configuration which has
- the specified key as name as byte, if possible.</div>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getBoolean-java.lang.String-boolean-">getBoolean</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+          boolean&nbsp;def)</code>
+<div class="block">Returns the the boolean value associated with the specified key as name,
+ if possible.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang">Byte</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getByte-java.lang.String-">getByte</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
+<div class="block">Returns the direct child element of this configuration which has
+ the specified key as name as byte, if possible or null.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>byte</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getByte-java.lang.String-byte-">getByte</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+       byte&nbsp;def)</code>
+<div class="block">Returns the the byte value associated with the specified key as name,
+ if possible.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html" title="enum in me.unei.configuration.api">Configurations.ConfigurationType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getConfigurationType--">getConfigurationType</a></span>()</code>
 <div class="block">Get the type of this configuration node instance.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>double</code></td>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getDouble-java.lang.String-">getDouble</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
 <div class="block">Returns the direct child element of this configuration which has
- the specified key as name as double, if possible.</div>
+ the specified key as name as double, if possible or null.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getDouble-java.lang.String-double-">getDouble</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+         double&nbsp;def)</code>
+<div class="block">Returns the the double number value associated with the specified key as name,
+ if possible.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../me/unei/configuration/SavedFile.html" title="class in me.unei.configuration">SavedFile</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getFile--">getFile</a></span>()</code>
 <div class="block">Returns the <a href="../../../../me/unei/configuration/SavedFile.html" title="class in me.unei.configuration"><code>SavedFile</code></a> that represents this
  configuration's file location.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getFileName--">getFileName</a></span>()</code>
 <div class="block">Returns the name of the <a href="../../../../me/unei/configuration/SavedFile.html" title="class in me.unei.configuration"><code>SavedFile</code></a> that
  represents this configuration's file location.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>float</code></td>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang">Float</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getFloat-java.lang.String-">getFloat</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
 <div class="block">Returns the direct child element of this configuration which has
- the specified key as name as float, if possible.</div>
+ the specified key as name as float, if possible or null.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>int</code></td>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getFloat-java.lang.String-float-">getFloat</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+        float&nbsp;def)</code>
+<div class="block">Returns the the float value associated with the specified key as name,
+ if possible.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getInteger-java.lang.String-">getInteger</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
 <div class="block">Returns the direct child element of this configuration which has
- the specified key as name as int, if possible.</div>
+ the specified key as name as int, if possible or null.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getInteger-java.lang.String-int-">getInteger</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+          int&nbsp;def)</code>
+<div class="block">Returns the the integer value associated with the specified key as name,
+ if possible.</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getKeys--">getKeys</a></span>()</code>
 <div class="block">Returns a set of the keys of all the direct children of this configuration.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>long</code></td>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getLong-java.lang.String-">getLong</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
 <div class="block">Returns the direct child element of this configuration which has
- the specified key as name as long, if possible.</div>
+ the specified key as name as long, if possible or null.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getLong-java.lang.String-long-">getLong</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+       long&nbsp;def)</code>
+<div class="block">Returns the the long value associated with the specified key as name,
+ if possible.</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getName--">getName</a></span>()</code>
 <div class="block">Returns the name of this configuration.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>short</code></td>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getShort-java.lang.String-">getShort</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
 <div class="block">Returns the direct child element of this configuration which has
- the specified key as name as short, if possible.</div>
+ the specified key as name as short, if possible or null.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>short</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getShort-java.lang.String-short-">getShort</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+        short&nbsp;def)</code>
+<div class="block">Returns the the short value associated with the specified key as name,
+ if possible.</div>
+</td>
+</tr>
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getString-java.lang.String-">getString</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
 <div class="block">Returns the direct child element of this configuration which has
- the specified key as name as <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a>, if possible.</div>
+ the specified key as name as <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a>, if possible or null.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i22" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getString-java.lang.String-java.lang.String-">getString</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;def)</code>
+<div class="block">Returns the the string value associated with the specified key as name,
+ if possible.</div>
+</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#lock--">lock</a></span>()</code>
 <div class="block">Locks this configuration and the file that represents it if applicable.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#reload--">reload</a></span>()</code>
 <div class="block">Reloads this configuration contents with the one stored, deleting
  any unsaved modification.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#remove-java.lang.String-">remove</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
 <div class="block">Removes any direct child element of this configuration which has
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#save--">save</a></span>()</code>
 <div class="block">Saves all the modifications made to this configuration to the
  appropriate location.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setBoolean-java.lang.String-boolean-">setBoolean</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
           boolean&nbsp;value)</code>
@@ -261,7 +325,7 @@ var activeTableTab = "activeTableTab";
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setByte-java.lang.String-byte-">setByte</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
        byte&nbsp;value)</code>
@@ -269,7 +333,7 @@ var activeTableTab = "activeTableTab";
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setDouble-java.lang.String-double-">setDouble</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
          double&nbsp;value)</code>
@@ -277,7 +341,7 @@ var activeTableTab = "activeTableTab";
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setFloat-java.lang.String-float-">setFloat</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
         float&nbsp;value)</code>
@@ -285,7 +349,7 @@ var activeTableTab = "activeTableTab";
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setInteger-java.lang.String-int-">setInteger</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
           int&nbsp;value)</code>
@@ -293,7 +357,7 @@ var activeTableTab = "activeTableTab";
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setLong-java.lang.String-long-">setLong</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
        long&nbsp;value)</code>
@@ -301,7 +365,7 @@ var activeTableTab = "activeTableTab";
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setShort-java.lang.String-short-">setShort</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
         short&nbsp;value)</code>
@@ -309,12 +373,68 @@ var activeTableTab = "activeTableTab";
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setString-java.lang.String-java.lang.String-">setString</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>
 <div class="block">Sets the specified <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> as a child of this configuration with
  the specified key as name.</div>
+</td>
+</tr>
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#tryGetBoolean-java.lang.String-">tryGetBoolean</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
+<div class="block">Tries to get the boolean associated with the specified key as name,
+ if possible.</div>
+</td>
+</tr>
+<tr id="i36" class="altColor">
+<td class="colFirst"><code>byte</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#tryGetByte-java.lang.String-">tryGetByte</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
+<div class="block">Tries to get the byte associated with the specified key as name,
+ if possible.</div>
+</td>
+</tr>
+<tr id="i37" class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#tryGetDouble-java.lang.String-">tryGetDouble</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
+<div class="block">Tries to get the double number associated with the specified key as name,
+ if possible.</div>
+</td>
+</tr>
+<tr id="i38" class="altColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#tryGetFloat-java.lang.String-">tryGetFloat</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
+<div class="block">Tries to get the float associated with the specified key as name,
+ if possible.</div>
+</td>
+</tr>
+<tr id="i39" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#tryGetInteger-java.lang.String-">tryGetInteger</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
+<div class="block">Tries to get the integer associated with the specified key as name,
+ if possible.</div>
+</td>
+</tr>
+<tr id="i40" class="altColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#tryGetLong-java.lang.String-">tryGetLong</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
+<div class="block">Tries to get the long associated with the specified key as name,
+ if possible.</div>
+</td>
+</tr>
+<tr id="i41" class="rowColor">
+<td class="colFirst"><code>short</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#tryGetShort-java.lang.String-">tryGetShort</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
+<div class="block">Tries to get the short associated with the specified key as name,
+ if possible.</div>
+</td>
+</tr>
+<tr id="i42" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#tryGetString-java.lang.String-">tryGetString</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
+<div class="block">Tries to get the string associated with the specified key as name,
+ if possible.</div>
 </td>
 </tr>
 </table>
@@ -338,7 +458,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getConfigurationType</h4>
-<pre><a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html" title="enum in me.unei.configuration.api">Configurations.ConfigurationType</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.16">getConfigurationType</a>()</pre>
+<pre><a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html" title="enum in me.unei.configuration.api">Configurations.ConfigurationType</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.17">getConfigurationType</a>()</pre>
 <div class="block">Get the type of this configuration node instance.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -352,7 +472,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getFile</h4>
-<pre><a href="../../../../me/unei/configuration/SavedFile.html" title="class in me.unei.configuration">SavedFile</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.24">getFile</a>()</pre>
+<pre><a href="../../../../me/unei/configuration/SavedFile.html" title="class in me.unei.configuration">SavedFile</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.25">getFile</a>()</pre>
 <div class="block">Returns the <a href="../../../../me/unei/configuration/SavedFile.html" title="class in me.unei.configuration"><code>SavedFile</code></a> that represents this
  configuration's file location.</div>
 <dl>
@@ -367,7 +487,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getFileName</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.32">getFileName</a>()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.33">getFileName</a>()</pre>
 <div class="block">Returns the name of the <a href="../../../../me/unei/configuration/SavedFile.html" title="class in me.unei.configuration"><code>SavedFile</code></a> that
  represents this configuration's file location.</div>
 <dl>
@@ -382,7 +502,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getName</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.41">getName</a>()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.42">getName</a>()</pre>
 <div class="block">Returns the name of this configuration.
 
  Usually equivalent to <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getFileName--"><code>getFileName()</code></a>.</div>
@@ -398,7 +518,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>canAccess</h4>
-<pre>boolean&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.49">canAccess</a>()</pre>
+<pre>boolean&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.50">canAccess</a>()</pre>
 <div class="block">Returns <tt>true</tt> if it is currently possible to access and
  modify this configuration.</div>
 <dl>
@@ -413,7 +533,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>lock</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.54">lock</a>()</pre>
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.55">lock</a>()</pre>
 <div class="block">Locks this configuration and the file that represents it if applicable.</div>
 </li>
 </ul>
@@ -423,7 +543,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>save</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.62">save</a>()</pre>
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.63">save</a>()</pre>
 <div class="block">Saves all the modifications made to this configuration to the
  appropriate location.
 
@@ -436,7 +556,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>reload</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.70">reload</a>()
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.71">reload</a>()
      throws <a href="../../../../me/unei/configuration/api/exceptions/FileFormatException.html" title="class in me.unei.configuration.api.exceptions">FileFormatException</a></pre>
 <div class="block">Reloads this configuration contents with the one stored, deleting
  any unsaved modification.</div>
@@ -452,7 +572,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getKeys</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.77">getKeys</a>()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.78">getKeys</a>()</pre>
 <div class="block">Returns a set of the keys of all the direct children of this configuration.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -466,7 +586,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>contains</h4>
-<pre>boolean&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.86">contains</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre>boolean&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.87">contains</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns <tt>true</tt> if this configuration contains a direct child with
  the specified name.</div>
 <dl>
@@ -483,14 +603,55 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getString</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.95">getString</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.96">getString</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this configuration which has
- the specified key as name as <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a>, if possible.</div>
+ the specified key as name as <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a>, if possible or null.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - the name of the child to retrieve</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the direct child element with the specified name as <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="tryGetString-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tryGetString</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.107">tryGetString</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)
+             throws <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></pre>
+<div class="block">Tries to get the string associated with the specified key as name,
+ if possible. In case that name does not refer to a string value
+ a <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions"><code>NoFieldException</code></a> will be thrown.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name of the value to retrieve.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the string value with the specified name.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></code> - if the specified name does not refer to a string value.</dd>
+</dl>
+</li>
+</ul>
+<a name="getString-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getString</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.118">getString</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;def)</pre>
+<div class="block">Returns the the string value associated with the specified key as name,
+ if possible. In case that name does not refer to a string value the
+ specified default value will be returned (but not stored !).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name of the value to retrieve.</dd>
+<dd><code>def</code> - the default value to return of none available.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the string value with the specified name.</dd>
 </dl>
 </li>
 </ul>
@@ -500,14 +661,55 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getDouble</h4>
-<pre>double&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.104">getDouble</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.127">getDouble</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this configuration which has
- the specified key as name as double, if possible.</div>
+ the specified key as name as double, if possible or null.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - the name of the child to retrieve</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the direct child element with the specified name as double</dd>
+</dl>
+</li>
+</ul>
+<a name="tryGetDouble-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tryGetDouble</h4>
+<pre>double&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.138">tryGetDouble</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)
+             throws <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></pre>
+<div class="block">Tries to get the double number associated with the specified key as name,
+ if possible. In case that name does not refer to a double number value
+ a <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions"><code>NoFieldException</code></a> will be thrown.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name of the value to retrieve.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the double number value with the specified name.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></code> - if the specified name does not refer to a double number value.</dd>
+</dl>
+</li>
+</ul>
+<a name="getDouble-java.lang.String-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDouble</h4>
+<pre>double&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.149">getDouble</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+                 double&nbsp;def)</pre>
+<div class="block">Returns the the double number value associated with the specified key as name,
+ if possible. In case that name does not refer to a double number value the
+ specified default value will be returned (but not stored !).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name of the value to retrieve.</dd>
+<dd><code>def</code> - the default value to return of none available.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the double number value with the specified name.</dd>
 </dl>
 </li>
 </ul>
@@ -517,14 +719,55 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getBoolean</h4>
-<pre>boolean&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.113">getBoolean</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.158">getBoolean</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this configuration which has
- the specified key as name as boolean, if possible.</div>
+ the specified key as name as boolean, if possible or null.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - the name of the child to retrieve</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the direct child element with the specified name as boolean</dd>
+</dl>
+</li>
+</ul>
+<a name="tryGetBoolean-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tryGetBoolean</h4>
+<pre>boolean&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.169">tryGetBoolean</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)
+               throws <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></pre>
+<div class="block">Tries to get the boolean associated with the specified key as name,
+ if possible. In case that name does not refer to a boolean value
+ a <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions"><code>NoFieldException</code></a> will be thrown.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name of the value to retrieve.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the boolean value with the specified name.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></code> - if the specified name does not refer to a boolean value.</dd>
+</dl>
+</li>
+</ul>
+<a name="getBoolean-java.lang.String-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBoolean</h4>
+<pre>boolean&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.180">getBoolean</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+                   boolean&nbsp;def)</pre>
+<div class="block">Returns the the boolean value associated with the specified key as name,
+ if possible. In case that name does not refer to a boolean value the
+ specified default value will be returned (but not stored !).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name of the value to retrieve.</dd>
+<dd><code>def</code> - the default value to return of none available.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the boolean value with the specified name.</dd>
 </dl>
 </li>
 </ul>
@@ -534,14 +777,55 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getByte</h4>
-<pre>byte&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.122">getByte</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang">Byte</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.189">getByte</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this configuration which has
- the specified key as name as byte, if possible.</div>
+ the specified key as name as byte, if possible or null.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - the name of the child to retrieve</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the direct child element with the specified name as byte</dd>
+</dl>
+</li>
+</ul>
+<a name="tryGetByte-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tryGetByte</h4>
+<pre>byte&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.200">tryGetByte</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)
+         throws <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></pre>
+<div class="block">Tries to get the byte associated with the specified key as name,
+ if possible. In case that name does not refer to a byte value
+ a <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions"><code>NoFieldException</code></a> will be thrown.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name of the value to retrieve.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the byte value with the specified name.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></code> - if the specified name does not refer to a byte value.</dd>
+</dl>
+</li>
+</ul>
+<a name="getByte-java.lang.String-byte-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getByte</h4>
+<pre>byte&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.211">getByte</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+             byte&nbsp;def)</pre>
+<div class="block">Returns the the byte value associated with the specified key as name,
+ if possible. In case that name does not refer to a byte value the
+ specified default value will be returned (but not stored !).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name of the value to retrieve.</dd>
+<dd><code>def</code> - the default value to return of none available.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the byte value with the specified name.</dd>
 </dl>
 </li>
 </ul>
@@ -551,14 +835,55 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getShort</h4>
-<pre>short&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.131">getShort</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.220">getShort</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this configuration which has
- the specified key as name as short, if possible.</div>
+ the specified key as name as short, if possible or null.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - the name of the child to retrieve</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the direct child element with the specified name as short</dd>
+</dl>
+</li>
+</ul>
+<a name="tryGetShort-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tryGetShort</h4>
+<pre>short&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.231">tryGetShort</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)
+           throws <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></pre>
+<div class="block">Tries to get the short associated with the specified key as name,
+ if possible. In case that name does not refer to a short value
+ a <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions"><code>NoFieldException</code></a> will be thrown.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name of the value to retrieve.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the short value with the specified name.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></code> - if the specified name does not refer to a short value.</dd>
+</dl>
+</li>
+</ul>
+<a name="getShort-java.lang.String-short-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getShort</h4>
+<pre>short&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.242">getShort</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+               short&nbsp;def)</pre>
+<div class="block">Returns the the short value associated with the specified key as name,
+ if possible. In case that name does not refer to a short value the
+ specified default value will be returned (but not stored !).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name of the value to retrieve.</dd>
+<dd><code>def</code> - the default value to return of none available.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the short value with the specified name.</dd>
 </dl>
 </li>
 </ul>
@@ -568,14 +893,55 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getFloat</h4>
-<pre>float&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.140">getFloat</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang">Float</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.251">getFloat</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this configuration which has
- the specified key as name as float, if possible.</div>
+ the specified key as name as float, if possible or null.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - the name of the child to retrieve</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the direct child element with the specified name as float</dd>
+</dl>
+</li>
+</ul>
+<a name="tryGetFloat-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tryGetFloat</h4>
+<pre>float&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.262">tryGetFloat</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)
+           throws <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></pre>
+<div class="block">Tries to get the float associated with the specified key as name,
+ if possible. In case that name does not refer to a float value
+ a <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions"><code>NoFieldException</code></a> will be thrown.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name of the value to retrieve.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the float value with the specified name.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></code> - if the specified name does not refer to a float value.</dd>
+</dl>
+</li>
+</ul>
+<a name="getFloat-java.lang.String-float-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFloat</h4>
+<pre>float&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.273">getFloat</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+               float&nbsp;def)</pre>
+<div class="block">Returns the the float value associated with the specified key as name,
+ if possible. In case that name does not refer to a float value the
+ specified default value will be returned (but not stored !).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name of the value to retrieve.</dd>
+<dd><code>def</code> - the default value to return of none available.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the float value with the specified name.</dd>
 </dl>
 </li>
 </ul>
@@ -585,14 +951,55 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getInteger</h4>
-<pre>int&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.149">getInteger</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.282">getInteger</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this configuration which has
- the specified key as name as int, if possible.</div>
+ the specified key as name as int, if possible or null.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - the name of the child to retrieve</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the direct child element with the specified name as int</dd>
+</dl>
+</li>
+</ul>
+<a name="tryGetInteger-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tryGetInteger</h4>
+<pre>int&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.293">tryGetInteger</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)
+           throws <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></pre>
+<div class="block">Tries to get the integer associated with the specified key as name,
+ if possible. In case that name does not refer to a integer value
+ a <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions"><code>NoFieldException</code></a> will be thrown.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name of the value to retrieve.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the integer value with the specified name.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></code> - if the specified name does not refer to a integer value.</dd>
+</dl>
+</li>
+</ul>
+<a name="getInteger-java.lang.String-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInteger</h4>
+<pre>int&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.304">getInteger</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+               int&nbsp;def)</pre>
+<div class="block">Returns the the integer value associated with the specified key as name,
+ if possible. In case that name does not refer to a integer value the
+ specified default value will be returned (but not stored !).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name of the value to retrieve.</dd>
+<dd><code>def</code> - the default value to return of none available.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the integer value with the specified name.</dd>
 </dl>
 </li>
 </ul>
@@ -602,14 +1009,55 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getLong</h4>
-<pre>long&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.158">getLong</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.313">getLong</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this configuration which has
- the specified key as name as long, if possible.</div>
+ the specified key as name as long, if possible or null.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - the name of the child to retrieve</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the direct child element with the specified name as long</dd>
+</dl>
+</li>
+</ul>
+<a name="tryGetLong-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tryGetLong</h4>
+<pre>long&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.324">tryGetLong</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)
+         throws <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></pre>
+<div class="block">Tries to get the long associated with the specified key as name,
+ if possible. In case that name does not refer to a long value
+ a <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions"><code>NoFieldException</code></a> will be thrown.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name of the value to retrieve.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the boolean value with the specified name.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></code> - if the specified name does not refer to a long value.</dd>
+</dl>
+</li>
+</ul>
+<a name="getLong-java.lang.String-long-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLong</h4>
+<pre>long&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.335">getLong</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+             long&nbsp;def)</pre>
+<div class="block">Returns the the long value associated with the specified key as name,
+ if possible. In case that name does not refer to a long value the
+ specified default value will be returned (but not stored !).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name of the value to retrieve.</dd>
+<dd><code>def</code> - the default value to return of none available.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the long value with the specified name.</dd>
 </dl>
 </li>
 </ul>
@@ -619,7 +1067,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>setString</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.167">setString</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.344">setString</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</pre>
 <div class="block">Sets the specified <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> as a child of this configuration with
  the specified key as name.</div>
@@ -636,7 +1084,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>setDouble</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.176">setDouble</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.353">setDouble</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                double&nbsp;value)</pre>
 <div class="block">Sets the specified double as a child of this configuration with
  the specified key as name.</div>
@@ -653,7 +1101,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>setBoolean</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.185">setBoolean</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.362">setBoolean</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                 boolean&nbsp;value)</pre>
 <div class="block">Sets the specified boolean as a child of this configuration with
  the specified key as name.</div>
@@ -670,7 +1118,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>setByte</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.194">setByte</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.371">setByte</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
              byte&nbsp;value)</pre>
 <div class="block">Sets the specified byte as a child of this configuration with
  the specified key as name.</div>
@@ -687,7 +1135,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>setShort</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.203">setShort</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.380">setShort</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
               short&nbsp;value)</pre>
 <div class="block">Sets the specified short as a child of this configuration with
  the specified key as name.</div>
@@ -704,7 +1152,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>setFloat</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.212">setFloat</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.389">setFloat</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
               float&nbsp;value)</pre>
 <div class="block">Sets the specified float as a child of this configuration with
  the specified key as name.</div>
@@ -721,7 +1169,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>setInteger</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.221">setInteger</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.398">setInteger</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                 int&nbsp;value)</pre>
 <div class="block">Sets the specified int as a child of this configuration with
  the specified key as name.</div>
@@ -738,7 +1186,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>setLong</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.230">setLong</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.407">setLong</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
              long&nbsp;value)</pre>
 <div class="block">Sets the specified long as a child of this configuration with
  the specified key as name.</div>
@@ -755,7 +1203,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockListLast">
 <li class="blockList">
 <h4>remove</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.238">remove</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IFlatConfiguration.html#line.415">remove</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Removes any direct child element of this configuration which has
  the specified key as name.</div>
 <dl>

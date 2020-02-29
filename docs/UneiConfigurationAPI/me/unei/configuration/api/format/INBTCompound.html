@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":38,"i11":18,"i12":6,"i13":6,"i14":6,"i15":6,"i16":38,"i17":18,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":38,"i11":18,"i12":6,"i13":6,"i14":6,"i15":6,"i16":38,"i17":18,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -105,7 +105,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public interface <a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.8">INBTCompound</a>
+<pre>public interface <a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.9">INBTCompound</a>
 extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" title="interface in me.unei.configuration.api.format">INBTTag</a></pre>
 <div class="block">Represents a NBT Compound Tag.</div>
 </li>
@@ -256,26 +256,33 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
 </td>
 </tr>
 <tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#getUUID-java.lang.String-">getUUID</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
+<div class="block">Returns the direct child element of this tag which has
+ the specified key as name as <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util"><code>uuid</code></a>, if possible.</div>
+</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#hasKey-java.lang.String-">hasKey</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
 <div class="block">Returns <tt>true</tt> if this tag contains a direct child with
  the specified name.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#keySet--">keySet</a></span>()</code>
 <div class="block">Returns a set of the keys of all the direct children of this tag.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#remove-java.lang.String-">remove</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
 <div class="block">Removes any direct child element of this tag which has
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#set-java.lang.String-me.unei.configuration.api.format.INBTTag-">set</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
    <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" title="interface in me.unei.configuration.api.format">INBTTag</a>&nbsp;elem)</code>
@@ -283,7 +290,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#setBoolean-java.lang.String-boolean-">setBoolean</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
           boolean&nbsp;value)</code>
@@ -291,7 +298,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#setByte-java.lang.String-byte-">setByte</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
        byte&nbsp;value)</code>
@@ -299,7 +306,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#setByteArray-java.lang.String-byte:A-">setByteArray</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
             byte[]&nbsp;value)</code>
@@ -307,7 +314,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#setDouble-java.lang.String-double-">setDouble</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
          double&nbsp;value)</code>
@@ -315,7 +322,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#setFloat-java.lang.String-float-">setFloat</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
         float&nbsp;value)</code>
@@ -323,7 +330,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#setInt-java.lang.String-int-">setInt</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
       int&nbsp;value)</code>
@@ -331,7 +338,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#setIntArray-java.lang.String-int:A-">setIntArray</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
            int[]&nbsp;value)</code>
@@ -339,7 +346,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#setLong-java.lang.String-long-">setLong</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
        long&nbsp;value)</code>
@@ -347,7 +354,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#setLongArray-java.lang.String-long:A-">setLongArray</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
             long[]&nbsp;value)</code>
@@ -355,7 +362,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#setShort-java.lang.String-short-">setShort</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
         short&nbsp;value)</code>
@@ -363,7 +370,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#setString-java.lang.String-java.lang.String-">setString</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>
@@ -371,7 +378,15 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
  the specified key as name.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i34" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#setUUID-java.lang.String-java.util.UUID-">setUUID</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;value)</code>
+<div class="block">Sets the specified <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util"><code>uuid</code></a> as a child of this tag with
+ the specified key as name.</div>
+</td>
+</tr>
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#size--">size</a></span>()</code>
 <div class="block">Returns the number of direct children of this tag.</div>
@@ -405,7 +420,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>keySet</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.15">keySet</a>()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.16">keySet</a>()</pre>
 <div class="block">Returns a set of the keys of all the direct children of this tag.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -419,7 +434,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>size</h4>
-<pre>int&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.22">size</a>()</pre>
+<pre>int&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.23">size</a>()</pre>
 <div class="block">Returns the number of direct children of this tag.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -433,7 +448,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>set</h4>
-<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.31">set</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.32">set</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
          <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" title="interface in me.unei.configuration.api.format">INBTTag</a>&nbsp;elem)</pre>
 <div class="block">Sets the specified element as a child of this tag with
  the specified key as name.</div>
@@ -450,7 +465,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>setByte</h4>
-<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.40">setByte</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.41">setByte</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
              byte&nbsp;value)</pre>
 <div class="block">Sets the specified byte as a child of this tag with
  the specified key as name.</div>
@@ -467,7 +482,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>setShort</h4>
-<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.49">setShort</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.50">setShort</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
               short&nbsp;value)</pre>
 <div class="block">Sets the specified short as a child of this tag with
  the specified key as name.</div>
@@ -484,7 +499,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>setInt</h4>
-<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.58">setInt</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.59">setInt</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
             int&nbsp;value)</pre>
 <div class="block">Sets the specified int as a child of this tag with
  the specified key as name.</div>
@@ -501,7 +516,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>setLong</h4>
-<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.67">setLong</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.68">setLong</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
              long&nbsp;value)</pre>
 <div class="block">Sets the specified long as a child of this tag with
  the specified key as name.</div>
@@ -518,7 +533,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>setFloat</h4>
-<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.76">setFloat</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.77">setFloat</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
               float&nbsp;value)</pre>
 <div class="block">Sets the specified float as a child of this tag with
  the specified key as name.</div>
@@ -535,7 +550,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>setDouble</h4>
-<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.85">setDouble</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.86">setDouble</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                double&nbsp;value)</pre>
 <div class="block">Sets the specified double as a child of this tag with
  the specified key as name.</div>
@@ -552,7 +567,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>setString</h4>
-<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.94">setString</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.95">setString</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</pre>
 <div class="block">Sets the specified <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> as a child of this tag with
  the specified key as name.</div>
@@ -569,7 +584,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>setByteArray</h4>
-<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.103">setByteArray</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.104">setByteArray</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                   byte[]&nbsp;value)</pre>
 <div class="block">Sets the specified byte array as a child of this tag with
  the specified key as name.</div>
@@ -586,7 +601,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>setIntArray</h4>
-<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.112">setIntArray</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.113">setIntArray</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                  int[]&nbsp;value)</pre>
 <div class="block">Sets the specified int array as a child of this tag with
  the specified key as name.</div>
@@ -603,7 +618,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>setLongArray</h4>
-<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.121">setLongArray</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.122">setLongArray</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                   long[]&nbsp;value)</pre>
 <div class="block">Sets the specified long array as a child of this tag with
  the specified key as name.</div>
@@ -620,7 +635,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>setBoolean</h4>
-<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.130">setBoolean</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.131">setBoolean</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                 boolean&nbsp;value)</pre>
 <div class="block">Sets the specified boolean as a child of this tag with
  the specified key as name.</div>
@@ -631,13 +646,30 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
 </dl>
 </li>
 </ul>
+<a name="setUUID-java.lang.String-java.util.UUID-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setUUID</h4>
+<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.140">setUUID</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;value)</pre>
+<div class="block">Sets the specified <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util"><code>uuid</code></a> as a child of this tag with
+ the specified key as name.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name to give to the child</dd>
+<dd><code>value</code> - the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util"><code>uuid</code></a> to set as child</dd>
+</dl>
+</li>
+</ul>
 <a name="get-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre><a href="../../../../../me/unei/configuration/api/format/INBTTag.html" title="interface in me.unei.configuration.api.format">INBTTag</a>&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.139">get</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre><a href="../../../../../me/unei/configuration/api/format/INBTTag.html" title="interface in me.unei.configuration.api.format">INBTTag</a>&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.149">get</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this tag which has
  the specified key as name.</div>
 <dl>
@@ -655,7 +687,7 @@ extends <a href="../../../../../me/unei/configuration/api/format/INBTTag.html" t
 <li class="blockList">
 <h4>getTypeOf</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.150">getTypeOf</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.160">getTypeOf</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Magic value. prefer using <a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#getTypeOfTag-java.lang.String-"><code>getTypeOfTag(String)</code></a>.</span></div>
 <div class="block">Returns the type as byte of the child element of this tag
  which has the specified key as name.</div>
@@ -673,7 +705,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <ul class="blockList">
 <li class="blockList">
 <h4>getTypeOfTag</h4>
-<pre>default&nbsp;<a href="../../../../../me/unei/configuration/api/format/TagType.html" title="enum in me.unei.configuration.api.format">TagType</a>&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.159">getTypeOfTag</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre>default&nbsp;<a href="../../../../../me/unei/configuration/api/format/TagType.html" title="enum in me.unei.configuration.api.format">TagType</a>&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.169">getTypeOfTag</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the tag type of the child element of this tag
  which has the specified key as name.</div>
 <dl>
@@ -690,7 +722,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <ul class="blockList">
 <li class="blockList">
 <h4>hasKey</h4>
-<pre>boolean&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.170">hasKey</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre>boolean&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.180">hasKey</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns <tt>true</tt> if this tag contains a direct child with
  the specified name.</div>
 <dl>
@@ -707,7 +739,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <ul class="blockList">
 <li class="blockList">
 <h4>getByte</h4>
-<pre>byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.179">getByte</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre>byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.189">getByte</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this tag which has
  the specified key as name as byte, if possible.</div>
 <dl>
@@ -724,7 +756,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <ul class="blockList">
 <li class="blockList">
 <h4>getShort</h4>
-<pre>short&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.188">getShort</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre>short&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.198">getShort</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this tag which has
  the specified key as name as short, if possible.</div>
 <dl>
@@ -741,7 +773,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <ul class="blockList">
 <li class="blockList">
 <h4>getInt</h4>
-<pre>int&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.197">getInt</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre>int&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.207">getInt</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this tag which has
  the specified key as name as int, if possible.</div>
 <dl>
@@ -758,7 +790,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <ul class="blockList">
 <li class="blockList">
 <h4>getLong</h4>
-<pre>long&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.206">getLong</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre>long&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.216">getLong</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this tag which has
  the specified key as name as long, if possible.</div>
 <dl>
@@ -775,7 +807,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <ul class="blockList">
 <li class="blockList">
 <h4>getFloat</h4>
-<pre>float&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.215">getFloat</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre>float&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.225">getFloat</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this tag which has
  the specified key as name as float, if possible.</div>
 <dl>
@@ -792,7 +824,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <ul class="blockList">
 <li class="blockList">
 <h4>getDouble</h4>
-<pre>double&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.224">getDouble</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre>double&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.234">getDouble</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this tag which has
  the specified key as name as double, if possible.</div>
 <dl>
@@ -809,7 +841,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <ul class="blockList">
 <li class="blockList">
 <h4>getString</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.233">getString</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.243">getString</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this tag which has
  the specified key as name as <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a>, if possible.</div>
 <dl>
@@ -826,7 +858,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <ul class="blockList">
 <li class="blockList">
 <h4>getByteArray</h4>
-<pre>byte[]&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.242">getByteArray</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre>byte[]&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.252">getByteArray</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this tag which has
  the specified key as byte array as byte, if possible.</div>
 <dl>
@@ -843,7 +875,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <ul class="blockList">
 <li class="blockList">
 <h4>getIntArray</h4>
-<pre>int[]&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.251">getIntArray</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre>int[]&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.261">getIntArray</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this tag which has
  the specified key as name as int array, if possible.</div>
 <dl>
@@ -860,7 +892,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <ul class="blockList">
 <li class="blockList">
 <h4>getLongArray</h4>
-<pre>long[]&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.260">getLongArray</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre>long[]&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.270">getLongArray</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this tag which has
  the specified key as name as long array, if possible.</div>
 <dl>
@@ -877,7 +909,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <ul class="blockList">
 <li class="blockList">
 <h4>getCompound</h4>
-<pre><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html" title="interface in me.unei.configuration.api.format">INBTCompound</a>&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.269">getCompound</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre><a href="../../../../../me/unei/configuration/api/format/INBTCompound.html" title="interface in me.unei.configuration.api.format">INBTCompound</a>&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.279">getCompound</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this tag which has
  the specified key as name as an <a href="../../../../../me/unei/configuration/api/format/INBTCompound.html" title="interface in me.unei.configuration.api.format"><code>INBTCompound</code></a>, if possible.</div>
 <dl>
@@ -894,7 +926,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <ul class="blockList">
 <li class="blockList">
 <h4>getBoolean</h4>
-<pre>boolean&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.278">getBoolean</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre>boolean&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.288">getBoolean</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Returns the direct child element of this tag which has
  the specified key as name as boolean, if possible.</div>
 <dl>
@@ -905,6 +937,23 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 </dl>
 </li>
 </ul>
+<a name="getUUID-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUUID</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.297">getUUID</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<div class="block">Returns the direct child element of this tag which has
+ the specified key as name as <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util"><code>uuid</code></a>, if possible.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the name of the child to retrieve</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the direct child element with the specified name as <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util"><code>uuid</code></a></dd>
+</dl>
+</li>
+</ul>
 <a name="getList-java.lang.String-byte-">
 <!--   -->
 </a>
@@ -912,7 +961,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <li class="blockList">
 <h4>getList</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-<a href="../../../../../me/unei/configuration/api/format/INBTList.html" title="interface in me.unei.configuration.api.format">INBTList</a>&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.290">getList</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<a href="../../../../../me/unei/configuration/api/format/INBTList.html" title="interface in me.unei.configuration.api.format">INBTList</a>&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.309">getList</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                               byte&nbsp;type)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Magic value of type. Prefer using <a href="../../../../../me/unei/configuration/api/format/INBTCompound.html#getList-java.lang.String-me.unei.configuration.api.format.TagType-"><code>getList(String, TagType)</code></a>.</span></div>
 <div class="block">Returns the direct child element of this tag which has
@@ -932,7 +981,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <ul class="blockList">
 <li class="blockList">
 <h4>getList</h4>
-<pre>default&nbsp;<a href="../../../../../me/unei/configuration/api/format/INBTList.html" title="interface in me.unei.configuration.api.format">INBTList</a>&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.300">getList</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+<pre>default&nbsp;<a href="../../../../../me/unei/configuration/api/format/INBTList.html" title="interface in me.unei.configuration.api.format">INBTList</a>&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.319">getList</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                          <a href="../../../../../me/unei/configuration/api/format/TagType.html" title="enum in me.unei.configuration.api.format">TagType</a>&nbsp;type)</pre>
 <div class="block">Returns the direct child element of this tag which has
  the specified key as name as an <a href="../../../../../me/unei/configuration/api/format/INBTList.html" title="interface in me.unei.configuration.api.format"><code>INBTList</code></a>, if possible.</div>
@@ -951,7 +1000,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <ul class="blockList">
 <li class="blockList">
 <h4>remove</h4>
-<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.310">remove</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.329">remove</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Removes any direct child element of this tag which has
  the specified key as name.</div>
 <dl>
@@ -966,7 +1015,7 @@ byte&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBT
 <ul class="blockListLast">
 <li class="blockList">
 <h4>clear</h4>
-<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.316">clear</a>()</pre>
+<pre>void&nbsp;<a href="../../../../../src-html/me/unei/configuration/api/format/INBTCompound.html#line.335">clear</a>()</pre>
 <div class="block">Removes all of the mappings from this tag.
  The tag will be empty after this call returns.</div>
 </li>

@@ -256,7 +256,7 @@ implements <a href="../../../me/unei/configuration/plugin/IBasicPlugin.html" tit
 <ul class="blockListLast">
 <li class="blockList">
 <h4>INSTANCE</h4>
-<pre>public static final&nbsp;<a href="../../../me/unei/configuration/StaticInstance.StaticInstanceExposer.html" title="class in me.unei.configuration">StaticInstance.StaticInstanceExposer</a>&lt;<a href="../../../me/unei/configuration/UneiConfiguration.html" title="class in me.unei.configuration">UneiConfiguration</a>&gt; <a href="../../../src-html/me/unei/configuration/UneiConfiguration.html#line.10">INSTANCE</a></pre>
+<pre>public static final&nbsp;<a href="../../../me/unei/configuration/StaticInstance.StaticInstanceExposer.html" title="class in me.unei.configuration">StaticInstance.StaticInstanceExposer</a>&lt;<a href="../../../me/unei/configuration/UneiConfiguration.html" title="class in me.unei.configuration">UneiConfiguration</a>&gt; <a href="../../../src-html/me/unei/configuration/UneiConfiguration.html#line.9">INSTANCE</a></pre>
 </li>
 </ul>
 </li>
@@ -290,7 +290,7 @@ implements <a href="../../../me/unei/configuration/plugin/IBasicPlugin.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>getInstance</h4>
-<pre>public static&nbsp;<a href="../../../me/unei/configuration/UneiConfiguration.html" title="class in me.unei.configuration">UneiConfiguration</a>&nbsp;<a href="../../../src-html/me/unei/configuration/UneiConfiguration.html#line.36">getInstance</a>()</pre>
+<pre>public static&nbsp;<a href="../../../me/unei/configuration/UneiConfiguration.html" title="class in me.unei.configuration">UneiConfiguration</a>&nbsp;<a href="../../../src-html/me/unei/configuration/UneiConfiguration.html#line.34">getInstance</a>()</pre>
 <div class="block">Gets  an instance of the running UneiConfiguration plugin.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -304,7 +304,7 @@ implements <a href="../../../me/unei/configuration/plugin/IBasicPlugin.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>registerMyNameInBStats</h4>
-<pre>public abstract&nbsp;void&nbsp;<a href="../../../src-html/me/unei/configuration/UneiConfiguration.html#line.50">registerMyNameInBStats</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+<pre>public abstract&nbsp;void&nbsp;<a href="../../../src-html/me/unei/configuration/UneiConfiguration.html#line.47">registerMyNameInBStats</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
 <div class="block">Sends the given name at BStats.
  <p>
  The name should be the name of the plugin using UneiConfiguration.
@@ -322,7 +322,7 @@ implements <a href="../../../me/unei/configuration/plugin/IBasicPlugin.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>tryInstanciate</h4>
-<pre>public static&nbsp;<a href="../../../me/unei/configuration/UneiConfiguration.html" title="class in me.unei.configuration">UneiConfiguration</a>&nbsp;<a href="../../../src-html/me/unei/configuration/UneiConfiguration.html#line.57">tryInstanciate</a>()</pre>
+<pre>public static&nbsp;<a href="../../../me/unei/configuration/UneiConfiguration.html" title="class in me.unei.configuration">UneiConfiguration</a>&nbsp;<a href="../../../src-html/me/unei/configuration/UneiConfiguration.html#line.54">tryInstanciate</a>()</pre>
 <div class="block">Try to load the UneiConfiguration implementation forcefully (useful when using it in stand-alone mode).</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -336,7 +336,7 @@ implements <a href="../../../me/unei/configuration/plugin/IBasicPlugin.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>getUpdater</h4>
-<pre>public abstract&nbsp;<a href="../../../me/unei/configuration/plugin/IUpdater.html" title="interface in me.unei.configuration.plugin">IUpdater</a>&nbsp;<a href="../../../src-html/me/unei/configuration/UneiConfiguration.html#line.68">getUpdater</a>()</pre>
+<pre>public abstract&nbsp;<a href="../../../me/unei/configuration/plugin/IUpdater.html" title="interface in me.unei.configuration.plugin">IUpdater</a>&nbsp;<a href="../../../src-html/me/unei/configuration/UneiConfiguration.html#line.64">getUpdater</a>()</pre>
 <div class="block">Gets the UneiConfiguration updater interface.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -350,7 +350,7 @@ implements <a href="../../../me/unei/configuration/plugin/IBasicPlugin.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>checkVersion</h4>
-<pre>public abstract&nbsp;<a href="../../../me/unei/configuration/plugin/IUpdater.Result.html" title="enum in me.unei.configuration.plugin">IUpdater.Result</a>&nbsp;<a href="../../../src-html/me/unei/configuration/UneiConfiguration.html#line.80">checkVersion</a>()</pre>
+<pre>public abstract&nbsp;<a href="../../../me/unei/configuration/plugin/IUpdater.Result.html" title="enum in me.unei.configuration.plugin">IUpdater.Result</a>&nbsp;<a href="../../../src-html/me/unei/configuration/UneiConfiguration.html#line.76">checkVersion</a>()</pre>
 <div class="block">Synchronously check for a new version of UneiConfiguration.
  <p>
  This is the same as calling <a href="../../../me/unei/configuration/plugin/IUpdater.html#checkVersion--"><code>IUpdater.checkVersion()</code></a>.</div>
@@ -368,7 +368,7 @@ implements <a href="../../../me/unei/configuration/plugin/IBasicPlugin.html" tit
 <ul class="blockListLast">
 <li class="blockList">
 <h4>checkVerionAsync</h4>
-<pre>public abstract&nbsp;void&nbsp;<a href="../../../src-html/me/unei/configuration/UneiConfiguration.html#line.91">checkVerionAsync</a>(<a href="../../../me/unei/configuration/plugin/IUpdater.ICallback.html" title="interface in me.unei.configuration.plugin">IUpdater.ICallback</a>&nbsp;callback)</pre>
+<pre>public abstract&nbsp;void&nbsp;<a href="../../../src-html/me/unei/configuration/UneiConfiguration.html#line.87">checkVerionAsync</a>(<a href="../../../me/unei/configuration/plugin/IUpdater.ICallback.html" title="interface in me.unei.configuration.plugin">IUpdater.ICallback</a>&nbsp;callback)</pre>
 <div class="block">Asynchronously check for a new version of UneiConfiguration.
  <p>
  This is the same as calling <a href="../../../me/unei/configuration/plugin/IUpdater.html#checkVersionAsync-me.unei.configuration.plugin.IUpdater.ICallback-"><code>IUpdater.checkVersionAsync(me.unei.configuration.plugin.IUpdater.ICallback)</code></a>.</div>

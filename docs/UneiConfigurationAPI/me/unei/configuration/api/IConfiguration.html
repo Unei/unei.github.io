@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -109,7 +109,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public interface <a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.8">IConfiguration</a>
+<pre>public interface <a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.9">IConfiguration</a>
 extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" title="interface in me.unei.configuration.api">IFlatConfiguration</a>, <a href="../../../../me/unei/configuration/api/fs/NavigableFile.html" title="interface in me.unei.configuration.api.fs">NavigableFile</a></pre>
 </li>
 </ul>
@@ -137,72 +137,80 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#get-java.lang.String-java.lang.Object-">get</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;def)</code>
+<div class="block">Returns the the value associated with the specified key as name,
+ if possible.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api">IConfiguration</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#getAt-int-">getAt</a></span>(int&nbsp;index)</code>
 <div class="block">Returns the direct child element of this configuration at the
  specified index, as an <a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api"><code>IConfiguration</code></a>.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang">Byte</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#getByteList-java.lang.String-">getByteList</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)</code>
 <div class="block">Returns the element at the specified path, starting at
  this configuration, as <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang"><code>Byte</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>, if possible.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api">IConfiguration</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#getChild-java.lang.String-">getChild</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
 <div class="block">Returns the direct child element of this configuration which has
  the specified name, as an <a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api"><code>IConfiguration</code></a>.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#getIntegerList-java.lang.String-">getIntegerList</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)</code>
 <div class="block">Returns the element at the specified path, starting at
  this configuration, as <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang"><code>Integer</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>, if possible.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#getLongList-java.lang.String-">getLongList</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)</code>
 <div class="block">Returns the element at the specified path, starting at
  this configuration, as <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang"><code>Long</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>, if possible.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#getName--">getName</a></span>()</code>
 <div class="block">Returns the name of this configuration section.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api">IConfiguration</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#getParent--">getParent</a></span>()</code>
 <div class="block">Returns the first parent of this configuration.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api">IConfiguration</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#getRoot--">getRoot</a></span>()</code>
 <div class="block">Returns the top-most parent starting from this configuration.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api">IConfiguration</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#getSubSection-java.lang.String-">getSubSection</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)</code>
 <div class="block">Returns the sub-section at the specified path, starting at
  this configuration.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../me/unei/configuration/formats/StorageType.html" title="enum in me.unei.configuration.formats">StorageType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#getType--">getType</a></span>()</code>
 <div class="block">Returns the type of this configuration section.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#set-java.lang.String-java.lang.Object-">set</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>
@@ -210,7 +218,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
  this configuration.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#setByteList-java.lang.String-java.util.List-">setByteList</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang">Byte</a>&gt;&nbsp;value)</code>
@@ -218,7 +226,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
  this configuration, to the specified <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang"><code>Byte</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#setIntegerList-java.lang.String-java.util.List-">setIntegerList</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;value)</code>
@@ -226,7 +234,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
  this configuration, to the specified <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang"><code>Integer</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#setLongList-java.lang.String-java.util.List-">setLongList</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;value)</code>
@@ -234,7 +242,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
  this configuration, to the specified <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang"><code>Long</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#setSubSection-java.lang.String-me.unei.configuration.api.IConfiguration-">setSubSection</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
              <a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api">IConfiguration</a>&nbsp;value)</code>
@@ -242,10 +250,17 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
  this configuration.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#setType-me.unei.configuration.formats.StorageType-">setType</a></span>(<a href="../../../../me/unei/configuration/formats/StorageType.html" title="enum in me.unei.configuration.formats">StorageType</a>&nbsp;type)</code>
 <div class="block">Sets the type of this configuration section.</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/IConfiguration.html#tryGet-java.lang.String-">tryGet</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)</code>
+<div class="block">Tries to get the object associated with the specified key as name,
+ if possible.</div>
 </td>
 </tr>
 </table>
@@ -254,7 +269,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;me.unei.configuration.api.<a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" title="interface in me.unei.configuration.api">IFlatConfiguration</a></h3>
-<code><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#canAccess--">canAccess</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#contains-java.lang.String-">contains</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getBoolean-java.lang.String-">getBoolean</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getByte-java.lang.String-">getByte</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getConfigurationType--">getConfigurationType</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getDouble-java.lang.String-">getDouble</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getFile--">getFile</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getFileName--">getFileName</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getFloat-java.lang.String-">getFloat</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getInteger-java.lang.String-">getInteger</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getKeys--">getKeys</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getLong-java.lang.String-">getLong</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getShort-java.lang.String-">getShort</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getString-java.lang.String-">getString</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#lock--">lock</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#reload--">reload</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#remove-java.lang.String-">remove</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#save--">save</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setBoolean-java.lang.String-boolean-">setBoolean</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setByte-java.lang.String-byte-">setByte</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setDouble-java.lang.String-double-">setDouble</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setFloat-java.lang.String-float-">setFloat</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setInteger-java.lang.String-int-">setInteger</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setLong-java.lang.String-long-">setLong</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setShort-java.lang.String-short-">setShort</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setString-java.lang.String-java.lang.String-">setString</a></code></li>
+<code><a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#canAccess--">canAccess</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#contains-java.lang.String-">contains</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getBoolean-java.lang.String-">getBoolean</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getBoolean-java.lang.String-boolean-">getBoolean</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getByte-java.lang.String-">getByte</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getByte-java.lang.String-byte-">getByte</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getConfigurationType--">getConfigurationType</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getDouble-java.lang.String-">getDouble</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getDouble-java.lang.String-double-">getDouble</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getFile--">getFile</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getFileName--">getFileName</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getFloat-java.lang.String-">getFloat</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getFloat-java.lang.String-float-">getFloat</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getInteger-java.lang.String-">getInteger</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getInteger-java.lang.String-int-">getInteger</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getKeys--">getKeys</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getLong-java.lang.String-">getLong</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getLong-java.lang.String-long-">getLong</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getShort-java.lang.String-">getShort</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getShort-java.lang.String-short-">getShort</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getString-java.lang.String-">getString</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#getString-java.lang.String-java.lang.String-">getString</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#lock--">lock</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#reload--">reload</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#remove-java.lang.String-">remove</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#save--">save</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setBoolean-java.lang.String-boolean-">setBoolean</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setByte-java.lang.String-byte-">setByte</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setDouble-java.lang.String-double-">setDouble</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setFloat-java.lang.String-float-">setFloat</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setInteger-java.lang.String-int-">setInteger</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setLong-java.lang.String-long-">setLong</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setShort-java.lang.String-short-">setShort</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#setString-java.lang.String-java.lang.String-">setString</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#tryGetBoolean-java.lang.String-">tryGetBoolean</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#tryGetByte-java.lang.String-">tryGetByte</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#tryGetDouble-java.lang.String-">tryGetDouble</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#tryGetFloat-java.lang.String-">tryGetFloat</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#tryGetInteger-java.lang.String-">tryGetInteger</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#tryGetLong-java.lang.String-">tryGetLong</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#tryGetShort-java.lang.String-">tryGetShort</a>, <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html#tryGetString-java.lang.String-">tryGetString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.me.unei.configuration.api.fs.NavigableFile">
@@ -283,7 +298,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>getRoot</h4>
-<pre><a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api">IConfiguration</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.15">getRoot</a>()</pre>
+<pre><a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api">IConfiguration</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.16">getRoot</a>()</pre>
 <div class="block">Returns the top-most parent starting from this configuration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -299,7 +314,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>getParent</h4>
-<pre><a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api">IConfiguration</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.22">getParent</a>()</pre>
+<pre><a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api">IConfiguration</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.23">getParent</a>()</pre>
 <div class="block">Returns the first parent of this configuration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -315,9 +330,11 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>getChild</h4>
-<pre><a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api">IConfiguration</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.31">getChild</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+<pre><a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api">IConfiguration</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.34">getChild</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
 <div class="block">Returns the direct child element of this configuration which has
- the specified name, as an <a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api"><code>IConfiguration</code></a>.</div>
+ the specified name, as an <a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api"><code>IConfiguration</code></a>.
+ <p>
+ Newbies: Prefer using <a href="../../../../me/unei/configuration/api/IConfiguration.html#getSubSection-java.lang.String-"><code>getSubSection(String)</code></a> over this one.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../me/unei/configuration/api/fs/NavigableFile.html#getChild-java.lang.String-">getChild</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../me/unei/configuration/api/fs/NavigableFile.html" title="interface in me.unei.configuration.api.fs">NavigableFile</a></code></dd>
@@ -334,7 +351,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>getAt</h4>
-<pre><a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api">IConfiguration</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.43">getAt</a>(int&nbsp;index)</pre>
+<pre><a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api">IConfiguration</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.46">getAt</a>(int&nbsp;index)</pre>
 <div class="block">Returns the direct child element of this configuration at the
  specified index, as an <a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api"><code>IConfiguration</code></a>.
  <p>
@@ -356,7 +373,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>getName</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.50">getName</a>()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.53">getName</a>()</pre>
 <div class="block">Returns the name of this configuration section.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -372,7 +389,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>getType</h4>
-<pre><a href="../../../../me/unei/configuration/formats/StorageType.html" title="enum in me.unei.configuration.formats">StorageType</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.57">getType</a>()</pre>
+<pre><a href="../../../../me/unei/configuration/formats/StorageType.html" title="enum in me.unei.configuration.formats">StorageType</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.60">getType</a>()</pre>
 <div class="block">Returns the type of this configuration section.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -386,7 +403,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>setType</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.64">setType</a>(<a href="../../../../me/unei/configuration/formats/StorageType.html" title="enum in me.unei.configuration.formats">StorageType</a>&nbsp;type)</pre>
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.67">setType</a>(<a href="../../../../me/unei/configuration/formats/StorageType.html" title="enum in me.unei.configuration.formats">StorageType</a>&nbsp;type)</pre>
 <div class="block">Sets the type of this configuration section.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -400,7 +417,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.73">get</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.76">get</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)</pre>
 <div class="block">Returns the element at the specified path, starting at
  this configuration.</div>
 <dl>
@@ -411,13 +428,54 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 </dl>
 </li>
 </ul>
+<a name="tryGet-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tryGet</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.87">tryGet</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)
+       throws <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></pre>
+<div class="block">Tries to get the object associated with the specified key as name,
+ if possible. In case that name does not refer to a value
+ a <a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions"><code>NoFieldException</code></a> will be thrown.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>path</code> - the path pointing to the element to retrieve</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the element at the specified path</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../me/unei/configuration/api/exceptions/NoFieldException.html" title="class in me.unei.configuration.api.exceptions">NoFieldException</a></code> - if the specified name does not refer to any value.</dd>
+</dl>
+</li>
+</ul>
+<a name="get-java.lang.String-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.98">get</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;def)</pre>
+<div class="block">Returns the the value associated with the specified key as name,
+ if possible. In case that name does not refer to any value the
+ specified default value will be returned (but not stored !).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>path</code> - the name of the value to retrieve.</dd>
+<dd><code>def</code> - the default value to return of none available.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value with the specified name.</dd>
+</dl>
+</li>
+</ul>
 <a name="getByteList-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getByteList</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang">Byte</a>&gt;&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.145">getByteList</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang">Byte</a>&gt;&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.170">getByteList</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)</pre>
 <div class="block">Returns the element at the specified path, starting at
  this configuration, as <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang"><code>Byte</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>, if possible.</div>
 <dl>
@@ -434,7 +492,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>getIntegerList</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.154">getIntegerList</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.179">getIntegerList</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)</pre>
 <div class="block">Returns the element at the specified path, starting at
  this configuration, as <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang"><code>Integer</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>, if possible.</div>
 <dl>
@@ -451,7 +509,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>getLongList</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.163">getLongList</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.188">getLongList</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)</pre>
 <div class="block">Returns the element at the specified path, starting at
  this configuration, as <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang"><code>Long</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>, if possible.</div>
 <dl>
@@ -468,7 +526,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>getSubSection</h4>
-<pre><a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api">IConfiguration</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.172">getSubSection</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)</pre>
+<pre><a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api">IConfiguration</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.197">getSubSection</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)</pre>
 <div class="block">Returns the sub-section at the specified path, starting at
  this configuration.</div>
 <dl>
@@ -485,7 +543,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>set</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.181">set</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.206">set</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
 <div class="block">Sets the element at the specified path, starting at
  this configuration.</div>
@@ -502,7 +560,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>setByteList</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.253">setByteList</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.278">setByteList</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang">Byte</a>&gt;&nbsp;value)</pre>
 <div class="block">Sets the element at the specified path, starting at
  this configuration, to the specified <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang"><code>Byte</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>.</div>
@@ -519,7 +577,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>setIntegerList</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.262">setIntegerList</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.287">setIntegerList</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
                     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;value)</pre>
 <div class="block">Sets the element at the specified path, starting at
  this configuration, to the specified <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang"><code>Integer</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>.</div>
@@ -536,7 +594,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>setLongList</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.271">setLongList</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.296">setLongList</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;value)</pre>
 <div class="block">Sets the element at the specified path, starting at
  this configuration, to the specified <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang"><code>Long</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>.</div>
@@ -553,7 +611,7 @@ extends <a href="../../../../me/unei/configuration/api/IFlatConfiguration.html" 
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setSubSection</h4>
-<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.280">setSubSection</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+<pre>void&nbsp;<a href="../../../../src-html/me/unei/configuration/api/IConfiguration.html#line.305">setSubSection</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
                    <a href="../../../../me/unei/configuration/api/IConfiguration.html" title="interface in me.unei.configuration.api">IConfiguration</a>&nbsp;value)</pre>
 <div class="block">Sets the sub-section at the specified path, starting at
  this configuration.</div>

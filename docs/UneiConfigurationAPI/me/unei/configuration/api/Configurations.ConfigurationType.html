@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":9,"i5":9};
+var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":9,"i6":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -203,16 +203,21 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?i
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html#Other">Other</a></span></code>
+<div class="block">Any Configuration type that is not managed by UNEI Configuration.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html#Properties">Properties</a></span></code>
 <div class="block">A Java Properties Configuration type.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html#SQLite">SQLite</a></span></code>
 <div class="block">A SQLite Configuration type but with 'non-flat' values allocations.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html#YAML">YAML</a></span></code>
 <div class="block">A YAML Configuration type.</div>
 </td>
@@ -253,12 +258,18 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?i
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html#isFlat--">isFlat</a></span>()</code>
+<div class="block">Gets whenever this configuration type is about a flat structure.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html" title="enum in me.unei.configuration.api">Configurations.ConfigurationType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html#valueOf-java.lang.String-">valueOf</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
 <div class="block">Returns the enum constant of this type with the specified name.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html" title="enum in me.unei.configuration.api">Configurations.ConfigurationType</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html#values--">values</a></span>()</code>
 <div class="block">Returns an array containing the constants of this enum type, in
@@ -403,11 +414,21 @@ the order they are declared.</div>
 <a name="YAML">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>YAML</h4>
 <pre>public static final&nbsp;<a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html" title="enum in me.unei.configuration.api">Configurations.ConfigurationType</a> <a href="../../../../src-html/me/unei/configuration/api/Configurations.ConfigurationType.html#line.81">YAML</a></pre>
 <div class="block">A YAML Configuration type. (Type used for CraftBukkit/Spigot/Forge/... configuration files).</div>
+</li>
+</ul>
+<a name="Other">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Other</h4>
+<pre>public static final&nbsp;<a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html" title="enum in me.unei.configuration.api">Configurations.ConfigurationType</a> <a href="../../../../src-html/me/unei/configuration/api/Configurations.ConfigurationType.html#line.85">Other</a></pre>
+<div class="block">Any Configuration type that is not managed by UNEI Configuration.</div>
 </li>
 </ul>
 </li>
@@ -466,7 +487,7 @@ not permitted.)</div>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDescription</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/Configurations.ConfigurationType.html#line.96">getDescription</a>()</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/Configurations.ConfigurationType.html#line.101">getDescription</a>()</pre>
 <div class="block">Gets a short description (or a long name) of this configuration type.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -480,11 +501,25 @@ not permitted.)</div>
 <ul class="blockList">
 <li class="blockList">
 <h4>getNames</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;<a href="../../../../src-html/me/unei/configuration/api/Configurations.ConfigurationType.html#line.105">getNames</a>()</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;<a href="../../../../src-html/me/unei/configuration/api/Configurations.ConfigurationType.html#line.110">getNames</a>()</pre>
 <div class="block">Gets the names used for this configuration type.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns a list of names.</dd>
+</dl>
+</li>
+</ul>
+<a name="isFlat--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isFlat</h4>
+<pre>public&nbsp;boolean&nbsp;<a href="../../../../src-html/me/unei/configuration/api/Configurations.ConfigurationType.html#line.119">isFlat</a>()</pre>
+<div class="block">Gets whenever this configuration type is about a flat structure.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Returns '<code>true</code>' if this is a flat configuration type, '<code>false</code>' otherwise.</dd>
 </dl>
 </li>
 </ul>
@@ -494,7 +529,7 @@ not permitted.)</div>
 <ul class="blockList">
 <li class="blockList">
 <h4>getByName</h4>
-<pre>public static&nbsp;<a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html" title="enum in me.unei.configuration.api">Configurations.ConfigurationType</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/Configurations.ConfigurationType.html#line.109">getByName</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+<pre>public static&nbsp;<a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html" title="enum in me.unei.configuration.api">Configurations.ConfigurationType</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/Configurations.ConfigurationType.html#line.132">getByName</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
 </li>
 </ul>
 <a name="getByOrdinal-int-">
@@ -503,7 +538,7 @@ not permitted.)</div>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getByOrdinal</h4>
-<pre>public static&nbsp;<a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html" title="enum in me.unei.configuration.api">Configurations.ConfigurationType</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/Configurations.ConfigurationType.html#line.123">getByOrdinal</a>(int&nbsp;ord)</pre>
+<pre>public static&nbsp;<a href="../../../../me/unei/configuration/api/Configurations.ConfigurationType.html" title="enum in me.unei.configuration.api">Configurations.ConfigurationType</a>&nbsp;<a href="../../../../src-html/me/unei/configuration/api/Configurations.ConfigurationType.html#line.146">getByOrdinal</a>(int&nbsp;ord)</pre>
 </li>
 </ul>
 </li>
