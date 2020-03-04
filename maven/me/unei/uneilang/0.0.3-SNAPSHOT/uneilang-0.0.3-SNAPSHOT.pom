@@ -1,0 +1,183 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>me.unei</groupId>
+  <artifactId>uneilang</artifactId>
+  <version>0.0.3-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>UneiLang</name>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.version.minecraft>1.12-R0.1-SNAPSHOT</project.version.minecraft>
+    <project.version.bungeecord>1.12-SNAPSHOT</project.version.bungeecord>
+
+    <manifest.built-by>UneiTeam</manifest.built-by>
+    
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    
+    <project.outdir>jars</project.outdir>
+  </properties>
+
+  <build>
+    <finalName>${project.name}-${project.version}</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-install-plugin</artifactId>
+        <version>2.5.2</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>install-file</goal>
+            </goals>
+            <phase>install</phase>
+            <configuration>
+              <file>${project.build.directory}/${project.build.finalName}.${project.packaging}</file>
+              <generatePom>false</generatePom>
+              <pomFile>pom.xml</pomFile>
+              <version>${project.version}</version>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.0.2</version>
+        <configuration>
+          <archive>
+            <manifestEntries>
+              <Built-By>${manifest.built-by}</Built-By>
+            </manifestEntries>
+          </archive>
+        </configuration>
+      </plugin>
+
+      <plugin>
+      	<groupId>org.apache.maven.plugins</groupId>
+      	<artifactId>maven-javadoc-plugin</artifactId>
+      	<version>2.10.4</version>
+      	<configuration>
+      		<archive>
+      			<manifestEntries>
+      				<Built-By>${manifest.built-by}</Built-By>
+      			</manifestEntries>
+      		</archive>
+      		<excludePackageNames>*.bungee;*.bukkit;*.reflection</excludePackageNames>
+      	</configuration>
+      	<executions>
+      		<execution>
+      			<id>attach-javadocs</id>
+      			<goals>
+      				<goal>jar</goal>
+      			</goals>
+      		</execution>
+      	</executions>
+      </plugin>
+
+      <plugin>
+      	<groupId>org.apache.maven.plugins</groupId>
+      	<artifactId>maven-shade-plugin</artifactId>
+      	<version>3.0.0</version>
+      	<executions>
+      	  <execution>
+      	    <id>shade</id>
+      	    <phase>package</phase>
+      	    <goals>
+      	      <goal>shade</goal>
+      	    </goals>
+      	    <configuration>
+      	      <shadedArtifactAttached>true</shadedArtifactAttached>
+      	      <shadedArtifactId>${project.name}</shadedArtifactId>
+      	      <shadedClassifierName>jar-with-dependencies</shadedClassifierName>
+      	    </configuration>
+      	  </execution>
+      	</executions>
+      </plugin>
+      
+      <plugin>
+      	<groupId>org.apache.maven.plugins</groupId>
+      	<artifactId>maven-antrun-plugin</artifactId>
+      	<version>1.8</version>
+      	<executions>
+      	  <execution>
+      	    <id>jars-cp</id>
+      	  	<phase>install</phase>
+      	  	<goals>
+      	  	  <goal>run</goal>
+      	  	</goals>
+      		<configuration>
+      		  <target name="Copying compiled jars">
+      	  	    <copy tofile="${project.outdir}/${project.name}.${project.packaging}">
+      	  	      <fileset file="${project.build.directory}/${project.build.finalName}.${project.packaging}" />
+      	  	    </copy>
+      	  	    <copy tofile="${project.outdir}/${project.name}-javadoc.${project.packaging}">
+      	  	      <fileset file="${project.build.directory}/${project.build.finalName}-javadoc.${project.packaging}" />
+      	  	    </copy>
+      	        <copy tofile="${project.outdir}/${project.name}-jar-with-dependencies.${project.packaging}">
+      	  	      <fileset file="${project.build.directory}/${project.build.finalName}-jar-with-dependencies.${project.packaging}" />
+      	        </copy>
+              </target>
+      		</configuration>
+      	  </execution>
+      	  <execution>
+      	    <id>jars-clean</id>
+      	  	<phase>clean</phase>
+      	  	<goals>
+      	  	  <goal>run</goal>
+      	  	</goals>
+      		<configuration>
+      		  <target name="Deleting compiled jars">
+      	  	    <delete file="${project.outdir}/${project.name}.${project.packaging}" />
+      	  	    <delete file="${project.outdir}/${project.name}-javadoc.${project.packaging}" />
+      	        <delete file="${project.outdir}/${project.name}-jar-with-dependencies.${project.packaging}" />
+              </target>
+      		</configuration>
+      	  </execution>
+      	</executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <repositories>
+    <repository>
+      <id>spigot-repo</id>
+      <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+    </repository>
+    <repository>
+      <id>bungeecord-repo</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+    </repository>
+    <repository>
+      <id>unei-repo</id>
+      <url>http://unei.github.io/maven/</url>
+    </repository>
+  </repositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.bukkit</groupId>
+      <artifactId>bukkit</artifactId>
+      <version>${project.version.minecraft}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.md-5</groupId>
+      <artifactId>bungeecord-api</artifactId>
+      <version>${project.version.bungeecord}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>me.unei</groupId>
+      <artifactId>UneiConfiguration</artifactId>
+      <version>[1.5,)</version>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+</project>
